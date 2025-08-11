@@ -3,6 +3,7 @@ from app import app
 
 client = TestClient(app)
 
+
 def test_predict_valid_input():
     payload = {
         "features": [
@@ -16,5 +17,3 @@ def test_predict_valid_input():
     assert "prediction" in result
     assert isinstance(result["prediction"], list)
     assert len(result["prediction"]) == 1
-
-

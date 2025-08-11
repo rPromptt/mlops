@@ -2,6 +2,7 @@ import pickle
 import numpy as np
 import os
 
+
 def test_model_prediction():
     model_path = os.path.join(os.path.dirname(__file__), "model/model.pkl")
     with open(model_path, "rb") as f:
