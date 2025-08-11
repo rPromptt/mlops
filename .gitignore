@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Jupyter Notebooks
+*.ipynb
+
+# Model artifacts
+*.pkl
+*.h5
+
+# Docker
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+
+# Test and data folders
+data/
+notebooks/
+tests/
