@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# yaml-language-server: disableValidation
 name: CI
 
 on:
@@ -55,6 +57,9 @@ jobs:
 
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
+
+      - name: Debug AWS identity
+        run: aws sts get-caller-identity
 
       - name: Terraform Init
         run: terraform init
